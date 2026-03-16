@@ -1,0 +1,18 @@
+git log --oneline --graph --all
+*   91e7a7b (HEAD -> master) Merge branch 'feature-borrow-book'
+|\  
+| *   197c485 (feature-borrow-book) Merge branch 'master' into feature-borrow-book
+| |\  
+| * | 4774e8b (origin/feature-borrow-book) Implement borrow book
+* | |   11ac185 Merge branch 'feature-genre-report'
+|\ \ \  
+| |_|/  
+|/| |   
+| * | 998b718 (origin/feature-genre-report, feature-genre-report) Implement genre report
+| |/  
+* / a430326 Update borrow message on master
+|/  
+* 1b3eb9f (origin/master, origin/feature-search-books, feature-search-books) Implement book search
+* a9a66d8 Add starter code
+* d31f993 Initial commit
+

@@ -1,0 +1,286 @@
+4. git init
+5. git remote add origin https://github.com/zafir-bogdanovikj/SI_2026_Lab1_242077.git
+6. git add README.md
+   git commit -m "Initial commit"
+7. git add .
+   git commit -m "Add starter code"
+8. git push -u origin master 
+   Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 1.33 KiB | 1.33 MiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:zafir-bogdanovikj/SI_2026_Lab1_242077.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+
+Del1
+
+9. git checkout -b feature-search-books
+Switched to a new branch 'feature-search-books'
+
+10. git commit -m "Implement book search"
+[feature-search-books 32fd2ba] Implement book search
+ Committer: Zafir Bogdanovikj <zafirbogdanovikj@Mac-8.home>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+11. git push origin feature-search-books
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 434 bytes | 434.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'feature-search-books' on GitHub by visiting:
+remote:      https://github.com/zafir-bogdanovikj/SI_2026_Lab1_242077/pull/new/feature-search-books
+remote: 
+To github.com:zafir-bogdanovikj/SI_2026_Lab1_242077.git
+ * [new branch]      feature-search-books -> feature-search-books
+
+12. git checkout master
+    Switched to branch 'master'
+    Your branch is up to date with 'origin/master'.
+       git merge feature-search-books
+    Updating 1aa6e58..32fd2ba
+    Fast-forward
+     SI2026Lab1Main.java | 8 +++++++-
+     1 file changed, 7 insertions(+), 1 deletion(-)
+
+13. git log --oneline --graph --all
+    * 1b3eb9f (HEAD -> master, origin/feature-search-books, feature-search-books) Implement book     search
+    * a9a66d8 (origin/master) Add starter code
+    * d31f993 Initial commit
+
+14. git push origin master
+    Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+    To github.com:zafir-bogdanovikj/SI_2026_Lab1_242077-.git
+    a9a66d8..1b3eb9f  master -> master
+
+15. git branch feature-borrow-book
+    git branch feature-genre-report
+    git branch                     
+      feature-borrow-book
+      feature-genre-report
+      feature-search-books
+    * master
+16. git checkout feature-borrow-book
+    Switched to branch 'feature-borrow-book'
+//успешно имплементирано барањето
+    git commit -m "Implement borrow book"          
+    [feature-borrow-book 4774e8b] Implement borrow book
+     Committer: Zafir Bogdanovikj <zafirbogdanovikj@Mac-8.home>
+    Your name and email address were configured automatically based
+    on your username and hostname. Please check that they are accurate.
+    You can suppress this message by setting them explicitly. Run the
+    following command and follow the instructions in your editor to edit
+    your configuration file:
+
+        git config --global --edit
+
+    After doing this, you may fix the identity used for this commit with:
+
+        git commit --amend --reset-author
+
+     1 file changed, 2 insertions(+), 2 deletions(-)
+17. git checkout master
+    Switched to branch 'master'
+//успешно имплементирано барањето
+    git commit -m "Update borrow message on master"
+    [master a430326] Update borrow message on master
+     Committer: Zafir Bogdanovikj <zafirbogdanovikj@Mac-8.home>
+    Your name and email address were configured automatically based
+    on your username and hostname. Please check that they are accurate.
+    You can suppress this message by setting them explicitly. Run the
+    following command and follow the instructions in your editor to edit
+    your configuration file:
+
+        git config --global --edit
+
+    After doing this, you may fix the identity used for this commit with:
+
+        git commit --amend --reset-author
+
+     1 file changed, 1 insertion(+), 1 deletion(-)
+    
+18. git checkout feature-genre-report
+    Switched to branch 'feature-genre-report'
+//успешно имплементирано барањето
+    git commit -m "Implement genre report"
+[feature-genre-report 998b718] Implement genre report
+ Committer: Zafir Bogdanovikj <zafirbogdanovikj@Mac-8.home>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 11 insertions(+), 1 deletion(-)
+19. git checkout feature-borrow-book
+    Switched to branch 'feature-borrow-book'
+    git push origin feature-borrow-book 
+    Enumerating objects: 5, done.
+    Counting objects: 100% (5/5), done.
+    Delta compression using up to 10 threads
+    Compressing objects: 100% (3/3), done.
+    Writing objects: 100% (3/3), 395 bytes | 395.00 KiB/s, done.
+    Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+    remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+    remote: 
+    remote: Create a pull request for 'feature-borrow-book' on GitHub by visiting:
+    remote:      https://github.com/zafir-bogdanovikj/SI_2026_Lab1_242077-/pull/new/feature-borrow-book
+    remote: 
+    To github.com:zafir-bogdanovikj/SI_2026_Lab1_242077-.git
+     * [new branch]      feature-borrow-book -> feature-borrow-book
+//направен е pull request
+20. git checkout feature-genre-report      
+    Switched to branch 'feature-genre-report'
+    git push origin feature-genre-report   
+    Enumerating objects: 5, done.
+    Counting objects: 100% (5/5), done.
+    Delta compression using up to 10 threads
+    Compressing objects: 100% (3/3), done.
+    Writing objects: 100% (3/3), 520 bytes | 520.00 KiB/s, done.
+    Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+    remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+    remote: 
+    remote: Create a pull request for 'feature-genre-report' on GitHub by visiting:
+    remote:      https://github.com/zafir-bogdanovikj/SI_2026_Lab1_242077-/pull/new/feature-genre-report
+    remote: 
+    To github.com:zafir-bogdanovikj/SI_2026_Lab1_242077-.git
+     * [new branch]      feature-genre-report -> feature-genre-report
+//направен е pull request
+21. git checkout feature-borrow-book
+    Switched to branch 'feature-borrow-book'
+    git merge master
+    Auto-merging SI2026Lab1Main.java
+    CONFLICT (content): Merge conflict in SI2026Lab1Main.java
+    Automatic merge failed; fix conflicts and then commit the result.
+//настана конфликт кој го разрешв рачно по сопствен избор, со Merge стратегија recursive.
+    git add SI2026Lab1Main.java
+    git commit
+    [feature-borrow-book 197c485] Merge branch 'master' into feature-borrow-book
+     Committer: Zafir Bogdanovikj <zafirbogdanovikj@Mac-8.home>
+    Your name and email address were configured automatically based
+    on your username and hostname. Please check that they are accurate.
+    You can suppress this message by setting them explicitly. Run the
+    following command and follow the instructions in your editor to edit
+    your configuration file:
+
+        git config --global --edit
+
+    After doing this, you may fix the identity used for this commit with:
+
+        git commit --amend --reset-author
+22. Кога направив merge на master во feature-borrow-book, се појави конфликт, го решив рачно уредувајќи ги фајловите и потоа завршив merge со git add и git commit; merge стратегијата ја користев recursive.
+    git status
+    On branch feature-borrow-book
+    nothing to commit, working tree clean
+        git log --oneline --graph --all        
+    *   197c485 (HEAD -> feature-borrow-book) Merge branch 'master' into feature-borrow-book
+    |\  
+    | * a430326 (master) Update borrow message on master
+    * | 4774e8b (origin/feature-borrow-book) Implement borrow book
+    |/  
+    | * 998b718 (origin/feature-genre-report, feature-genre-report) Implement genre report
+    |/  
+    * 1b3eb9f (origin/master, origin/feature-search-books, feature-search-books) Implement book search
+    * a9a66d8 Add starter code
+    * d31f993 Initial commit
+
+23. git merge feature-genre-report
+    Auto-merging SI2026Lab1Main.java
+    Merge made by the 'ort' strategy.
+     SI2026Lab1Main.java | 12 +++++++++++-
+     1 file changed, 11 insertions(+), 1 deletion(-)
+    git status                   
+    On branch master
+    nothing to commit, working tree clean
+
+//Го merge-нав feature-genre-report во master и merge-от беше fast-forward, бидејќи master немаше нови конфликти.
+24. git merge feature-borrow-book
+Auto-merging SI2026Lab1Main.java
+CONFLICT (content): Merge conflict in SI2026Lab1Main.java
+Automatic merge failed; fix conflicts and then commit the result.
+//повторно настана конфликт кој го разрешв рачно по сопствен избор, со Merge стратегија recursive.
+    git add SI2026Lab1Main.java
+    git commit
+    [master 91e7a7b] Merge branch 'feature-borrow-book'
+ Committer: Zafir Bogdanovikj <zafirbogdanovikj@Mac-8.home>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+25. git push origin master
+Enumerating objects: 16, done.
+Counting objects: 100% (16/16), done.
+Delta compression using up to 10 threads
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (10/10), 1.27 KiB | 1.27 MiB/s, done.
+Total 10 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+To github.com:zafir-bogdanovikj/SI_2026_Lab1_242077-.git
+   1b3eb9f..91e7a7b  master -> master
+26. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
